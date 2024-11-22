@@ -7,6 +7,19 @@ public class GridPath {
     /** Initialized in the constructor with distinct values that never change */
     private int[][] grid;
 
+    public String toString()
+    {
+        String s = " ";
+        for(int row = 0; row < grid.length; row++)
+        {
+            for(int col = 0; col < grid[0].length; col++)
+            {
+                s += grid[row][col] + ""; 
+            }
+            s += "\n";
+        }
+       return s;
+    }
     /**
      * Returns the Location representing a neighbor of the grid element at row and
      * col,
